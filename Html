@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="section">
+    <h1 id="typing-text"></h1>
+    <button id="mode-toggle">Toggle Dark Mode</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We are passionate about building amazing websites that solve real problems.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <p>Web Design, Development, SEO, and Marketing</p>
+  </section>
+
+  <!-- Gallery/Carousel -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="carousel">
+      <img src="https://via.placeholder.com/600x300?text=Slide+1" class="slide active" />
+      <img src="https://via.placeholder.com/600x300?text=Slide+2" class="slide" />
+      <img src="https://via.placeholder.com/600x300?text=Slide+3" class="slide" />
+      <div class="carousel-controls">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial active">Amazing service and support!</div>
+      <div class="testimonial">Loved the design and responsiveness!</div>
+      <div class="testimonial">Very professional and timely delivery.</div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" />
+      <input type="email" name="email" placeholder="Your Email" />
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+      <div id="form-message"></div>
+    </form>
+  </section>
+
+  <!-- Back to Top -->
+  <button id="backToTop">^</button>
+
+  <!-- Login Modal -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="loginUser()">Login</button>
+    </div>
+  </div>
+  <button id="loginTrigger">Login</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
